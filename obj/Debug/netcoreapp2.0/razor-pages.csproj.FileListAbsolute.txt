@@ -1,0 +1,11 @@
+C:\Home\github\razor-pages\bin\Debug\netcoreapp2.0\razor-pages.deps.json
+C:\Home\github\razor-pages\bin\Debug\netcoreapp2.0\razor-pages.runtimeconfig.json
+C:\Home\github\razor-pages\bin\Debug\netcoreapp2.0\razor-pages.runtimeconfig.dev.json
+C:\Home\github\razor-pages\bin\Debug\netcoreapp2.0\razor-pages.dll
+C:\Home\github\razor-pages\bin\Debug\netcoreapp2.0\razor-pages.pdb
+C:\Home\github\razor-pages\obj\Debug\netcoreapp2.0\razor-pages.csprojAssemblyReference.cache
+C:\Home\github\razor-pages\obj\Debug\netcoreapp2.0\razor-pages.csproj.CoreCompileInputs.cache
+C:\Home\github\razor-pages\obj\Debug\netcoreapp2.0\razor-pages.AssemblyInfoInputs.cache
+C:\Home\github\razor-pages\obj\Debug\netcoreapp2.0\razor-pages.AssemblyInfo.cs
+C:\Home\github\razor-pages\obj\Debug\netcoreapp2.0\razor-pages.dll
+C:\Home\github\razor-pages\obj\Debug\netcoreapp2.0\razor-pages.pdb

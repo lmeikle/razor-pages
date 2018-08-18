@@ -1,0 +1,13 @@
+@page
+@model PartialDemoModel
+@{
+    Layout = "Shared/StandardLayout";
+}
+<div>I'm the main body for PartialDemo</div>
+
+<partial name="_AnimalsPartial" model="Model.Animals"/>
+<!-- @Html.Partial("_AnimalsPartial", Model.Animals) -->
+
+@section OptionalSection{
+    I'm the optional section
+}

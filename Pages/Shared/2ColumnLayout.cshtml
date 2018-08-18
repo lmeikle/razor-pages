@@ -1,0 +1,12 @@
+@{
+    Layout = "Shared/_MasterLayout";
+}
+
+<div class="column-layout">
+    <div class="column">
+        @RenderBody()
+    </div>
+    <div class="column">
+        @RenderSection("RightColumn")
+    </div>
+</div>

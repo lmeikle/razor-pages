@@ -1,0 +1,20 @@
+@{
+    Layout = "Shared/_MasterLayout";
+}
+<div class="standard-layout">
+    @RenderBody()
+    <br />
+
+    @RenderSection("OptionalSection", required: false)
+
+    <br />
+    @if(IsSectionDefined("AnotherOptionalSection"))
+    {
+        @RenderSection("AnotherOptionalSection")
+    }
+    else
+    {
+        // default content
+        <p>AnotherOptionalSection not provided.</p>
+    }
+</div>

@@ -1,0 +1,44 @@
+﻿@page "{handler?}"
+@model FormsModel
+
+@{
+    ViewData["Title"] = "Forms";
+    Layout = "Shared/StandardLayout";
+}
+
+<br>
+<br>
+@Model.Message
+<br>
+<br>
+<div style="margin-top:30px;">
+    <div>Form 1</div>
+    <br>
+    <form asp-page-handler="form1" method="post">
+        <div>Name: <input asp-for="Name"/></div>
+        <div><input type="submit" /></div>
+    </form>
+</div>
+<div style="margin-top:30px;">
+    <div>Form 2</div>
+    <br>
+    <form asp-page-handler="form2" method="post">
+        <div>Name: <input asp-for="Name"/></div>
+        <div><input type="submit" /></div>
+    </form>
+</div>
+<div style="margin-top:30px;">
+    <div>Form 3</div>
+    <br>
+    <form asp-page-handler="form3" method="post">
+        <button asp-page-handler="Register">Register Now</button>
+        <button asp-page-handler="RequestInfo" name="id" value="3">Request Info</button>
+        <button asp-page-handler="GoHome">Go Home</button>
+    </form>
+</div>
+<div>
+    @if (!string.IsNullOrEmpty(Model.Name))
+    {
+        <p>Hello @Model.Name!</p>
+    }
+</div>
