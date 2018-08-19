@@ -1,4 +1,4 @@
-﻿@page "{handler?}"
+﻿@page "{handler?}/{id:int?}"
 @model FormsModel
 
 @{
@@ -8,9 +8,14 @@
 
 <br>
 <br>
-@Model.Message
+Message: @Model.Message
 <br>
+RouteData - handler: @RouteData.Values["id"]
 <br>
+RouteData - handler: @Model.Id
+<br>
+<h3>See here for more input types: https://www.learnrazorpages.com/razor-pages/forms</h3>
+<h3>See here for file upload: https://www.learnrazorpages.com/razor-pages/forms/file-upload</h3>
 <div style="margin-top:30px;">
     <div>Form 1</div>
     <br>
@@ -32,7 +37,8 @@
     <br>
     <form asp-page-handler="form3" method="post">
         <button asp-page-handler="Register">Register Now</button>
-        <button asp-page-handler="RequestInfo" name="id" value="3">Request Info</button>
+        <button asp-page-handler="RequestInfoWithRouteId" asp-route-id="10">Request Info with route id 10</button>
+        <button asp-page-handler="RequestInfoWithName" name="id" value="99">Request Info with name 99</button>
         <button asp-page-handler="GoHome">Go Home</button>
     </form>
 </div>

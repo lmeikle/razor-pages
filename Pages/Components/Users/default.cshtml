@@ -1,0 +1,8 @@
+@model List<razor_pages.User>
+<h3>Users - a list of users ViewComponet</h3>
+<ul>
+    @foreach (var user in Model)
+    {
+        <li>@user.Name</li>
+    }
+</ul>

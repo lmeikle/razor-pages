@@ -33,3 +33,5 @@ C:\Home\github\razor-pages\obj\Debug\netcoreapp2.1\razor-pages.Views.pdb
 C:\Home\github\razor-pages\obj\Debug\netcoreapp2.1\razor-pages.dll
 C:\Home\github\razor-pages\obj\Debug\netcoreapp2.1\razor-pages.pdb
 C:\Home\github\razor-pages\obj\Debug\netcoreapp2.1\razor-pages.csproj.CopyComplete
+C:\Home\github\razor-pages\obj\Debug\netcoreapp2.1\Razor\Pages\Components\Users\default.g.cshtml.cs
+C:\Home\github\razor-pages\obj\Debug\netcoreapp2.1\Razor\Pages\Components\User\default.g.cshtml.cs

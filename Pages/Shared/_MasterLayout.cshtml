@@ -40,6 +40,14 @@
         </div>
     </nav>
     <div class="container body-content">
+        <div>
+            @await  Component.InvokeAsync("Users")
+        </div>
+        <hr />
+        <div>
+            @await Component.InvokeAsync("User", new Random().Next(1, 10))
+        </div>
+        <hr />
         @RenderBody()
         <hr />
         <footer>

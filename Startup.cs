@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using razor_pages.Services;
 
 namespace razor_pages
 {
@@ -23,9 +24,16 @@ namespace razor_pages
         {
             services.AddMvc();
 
+            services.AddTransient<IUserService, UserService>();
+
             services.AddMvc().AddRazorOptions(options =>
             {
                 options.PageViewLocationFormats.Add("/Pages/partialdemo/{0}.cshtml");
+            });
+
+            services.AddMvc().AddRazorPagesOptions(options =>
+            {
+                options.Conventions.AddPageRoute("/Index", "{*url}");
             });
         }
 
@@ -38,10 +46,12 @@ namespace razor_pages
             }
             else
             {
-                app.UseExceptionHandler("/Error");
+                app.UseExceptionHandler("/error/Error");
             }
 
             app.UseStaticFiles();
+
+            app.UseElapsedTimeMiddleware();
 
             app.UseMvc();
         }

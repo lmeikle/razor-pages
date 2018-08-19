@@ -11,6 +11,11 @@ namespace razor_pages.Pages
     {
         public string Message { get; set; }
 
+        [BindProperty]
+        public string Name { get; set; }
+
+        public string Id { get; set; }
+
         public void OnGet()
         {
             Message = "I'm the FormsModel!!";
@@ -31,9 +36,16 @@ namespace razor_pages.Pages
             Message = $"whoop you clicked Register";
         }
 
-        public void OnPostRequestInfo(string id)
+        public void OnPostRequestInfoWithRouteId(string id)
         {
-            Message = $"whoop you clicked RequestInfo with id: {id}";
+            Id = id;
+            Message = $"whoop you clicked RequestInfoWithRouteId with id: {id}";
+        }
+
+        public void OnPostRequestInfoWithName(string id)
+        {
+            Id = id;
+            Message = $"whoop you clicked RequestInfoWithName with id: {id}";
         }
 
         public RedirectToPageResult OnPostGoHome()
@@ -41,8 +53,5 @@ namespace razor_pages.Pages
             return new RedirectToPageResult("../Index");
             //return RedirectToPage("../Index");
         }
-
-        [BindProperty]
-        public string Name { get; set; }
     }
 }
