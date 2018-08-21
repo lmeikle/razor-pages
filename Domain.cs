@@ -38,10 +38,10 @@ namespace razor_pages
     {
         public string First { get; set; }
         public string Second { get; set; }
-        public Car Car { get; set; }
+        public Vehicle Vehicle { get; set; }
     }
 
-    public class Car
+    public class Vehicle
     {
         public int NumberOfDoors { get; set; }
         public DateTime RegistrationDate { get; set; }

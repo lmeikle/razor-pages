@@ -15,45 +15,6 @@
               asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
         <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
     </environment>
-</head>
-<body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a asp-page="/Index" class="navbar-brand">razor_pages</a>
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li><a asp-page="/Index">Home</a></li>
-                    <li><a asp-page="/forms/Forms">Forms</a></li>
-                    <li><a asp-page="/2columns/2Columns">2Columns</a></li>
-                    <li><a asp-page="/partialdemo/PartialDemo">PartialDemo</a></li>
-                    <li><a asp-page="/contact/Contact">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <div class="container body-content">
-        <div>
-            @await  Component.InvokeAsync("Users")
-        </div>
-        <hr />
-        <div>
-            @await Component.InvokeAsync("User", new Random().Next(1, 10))
-        </div>
-        <hr />
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; 2017 - razor_pages</p>
-        </footer>
-    </div>
 
     <environment include="Development">
         <script src="~/lib/jquery/dist/jquery.js"></script>
@@ -75,5 +36,46 @@
         </script>
         <script src="~/js/site.min.js" asp-append-version="true"></script>
     </environment>
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a asp-page="/Index" class="navbar-brand">razor_pages</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a asp-page="/Index">Home</a></li>
+                    <li><a asp-page="/forms/Forms">Forms</a></li>
+                    <li><a asp-page="/2columns/2Columns">2Columns</a></li>
+                    <li><a asp-page="/partialdemo/PartialDemo">PartialDemo</a></li>
+                    <li><a asp-page="/contact/Contact">Contact</a></li>
+                    <li><a asp-page="/signupform/SignupForm">Signup Form</a></li>
+                    <li><a asp-page="/cars/Cars">Cars</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container body-content">
+        <div>
+            @await  Component.InvokeAsync("Users")
+        </div>
+        <hr />
+        <div>
+            @await Component.InvokeAsync("User", new Random().Next(1, 10))
+        </div>
+        <hr />
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; 2017 - razor_pages</p>
+        </footer>
+    </div>
 </body>
 </html>

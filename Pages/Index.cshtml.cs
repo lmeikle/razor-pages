@@ -22,7 +22,7 @@ namespace razor_pages.Pages
             ViewData["appSettings_first"] = _configuration["AppSettings:First"];
 
             var settings = _configuration.GetSection("AppSettings").Get<AppSettings>();
-            ViewData["appSettings_registrationDate"] = settings.Car.RegistrationDate;
+            ViewData["appSettings_registrationDate"] = settings.Vehicle.RegistrationDate;
         }
     }
 }

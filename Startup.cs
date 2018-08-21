@@ -25,6 +25,7 @@ namespace razor_pages
             services.AddMvc();
 
             services.AddTransient<IUserService, UserService>();
+            services.AddTransient<ICarService, CarService>();
 
             services.AddMvc().AddRazorOptions(options =>
             {
