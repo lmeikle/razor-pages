@@ -1,11 +1,13 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.IO;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.AspNetCore.SpaServices.Webpack;
 using razor_pages.Services;
 
 namespace razor_pages
@@ -43,6 +45,12 @@ namespace razor_pages
         {
             if (env.IsDevelopment())
             {
+                app.UseWebpackDevMiddleware(new WebpackDevMiddlewareOptions
+                {
+                    ProjectPath = Path.Combine(Directory.GetCurrentDirectory(), "client"),
+                    //HotModuleReplacement = true
+                });
+
                 app.UseDeveloperExceptionPage();
             }
             else

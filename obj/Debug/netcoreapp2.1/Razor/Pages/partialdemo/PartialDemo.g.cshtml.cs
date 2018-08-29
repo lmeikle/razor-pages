@@ -55,7 +55,7 @@ using razor_pages;
             WriteLiteral("<div>I\'m the main body for PartialDemo</div>\r\n\r\n");
             EndContext();
             BeginContext(126, 55, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "f4b67bf81f7f4ebbadc168b1c2f9c392", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "1dc62c0fcd234a35b2060a9a6b729c9e", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_TagHelpers_PartialTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper>();

@@ -1,17 +1,13 @@
 # See https://help.github.com/ignore-files/ for more about ignoring files.
 
 # dependencies
-/node_modules
+**/node_modules
 
 # testing
-/coverage
+**/coverage
 
 # production
-/build
-
-# backstopJS
-backstop_data/html_report/
-backstop_data/bitmaps_test/
+**/build
 
 # misc
 .DS_Store
@@ -26,3 +22,18 @@ yarn-error.log*
 /.vs/slnx.sqlite
 /.vs
 /.vscode
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+build/
+bld/
+[Bb]in/
+[Oo]bj/
+msbuild.log
+msbuild.err
+msbuild.wrn
