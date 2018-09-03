@@ -7,7 +7,9 @@ module.exports = (env = {}, argv = {}) => {
   const config = {
     mode: argv.mode || "development", // we default to development when no 'mode' arg is passed
     entry: {
-      main: "./js/main.js"
+      main: "./js/main.js",
+      classic_jquery: "./js/classic-jquery.js",
+      react_notes: "./js/react-notes.js"
     },
     output: {
       filename: "[name].js",
@@ -21,6 +23,13 @@ module.exports = (env = {}, argv = {}) => {
     ],
     module: {
       rules: [
+        {
+          test: /\.js$/,
+          exclude: /node_modules/,
+          use: {
+            loader: "babel-loader"
+          }
+        },
         {
           test: /\.css$/,
           use: [

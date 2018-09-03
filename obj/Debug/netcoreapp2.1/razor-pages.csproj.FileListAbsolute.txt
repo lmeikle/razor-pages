@@ -37,3 +37,4 @@ C:\Home\github\razor-pages\obj\Debug\netcoreapp2.1\Razor\Pages\Components\Users\
 C:\Home\github\razor-pages\obj\Debug\netcoreapp2.1\Razor\Pages\Components\User\default.g.cshtml.cs
 C:\Home\github\razor-pages\obj\Debug\netcoreapp2.1\Razor\Pages\signupform\SignupForm.g.cshtml.cs
 C:\Home\github\razor-pages\obj\Debug\netcoreapp2.1\Razor\Pages\cars\Cars.g.cshtml.cs
+C:\Home\github\razor-pages\obj\Debug\netcoreapp2.1\Razor\Pages\reactnotesapp\ReactNotesApp.g.cshtml.cs

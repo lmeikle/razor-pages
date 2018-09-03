@@ -1,0 +1,20 @@
+﻿@page
+@model ReactNotesAppModel
+@{
+    ViewData["Title"] = "ReactNotesApp";
+    Layout = "Shared/StandardLayout";
+}
+
+<h2> @Model.Message</h2>
+<div id="react-notes-app"></div>
+
+@section Scripts
+{
+    <environment names="Development">
+        <script src="~/dist/react_notes.js"></script>
+    </environment>
+    <environment names="Staging,Production">
+        <script src="~/dist/react_notes.js" asp-append-version="true"></script>
+    </environment>
+}
+
