@@ -9,6 +9,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.AspNetCore.SpaServices.Webpack;
 using razor_pages.Services;
+using razor_pages.Api.Notes;
 
 namespace razor_pages
 {
@@ -24,6 +25,7 @@ namespace razor_pages
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddSingleton<NotesStore>();
             services.AddMvc();
 
             services.AddTransient<IUserService, UserService>();
